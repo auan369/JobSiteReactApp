@@ -4,7 +4,8 @@ import { useState, useEffect } from 'react';
 //import ReactDOM from 'react-dom/client'
 import EmblaCarousel from './Carousel'
 //import useEmblaCarousel from 'embla-carousel-react'
-//import logo from './logo.svg';
+import logo from './logo.svg';
+import Card from 'react-bootstrap/Card';
 import data from './data.json';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -33,17 +34,21 @@ function App() {
   
 
   return (
+    
     <div className="App">
       <header className="App-header">
+        
         <div class="row">
           <p class="col-12" >
-            Edit <code>src/App.js</code> and save to reload.
+            NodeFlair.jobs
           </p>
           
         </div>
         
       </header>
+      
       <body className="App-body">
+        
         <div class="container">
           <div class="row">
             <div class="col-sm">

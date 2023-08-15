@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 20vmin;
+  height: 4rem;
   pointer-events: none;
 
 }
@@ -53,8 +53,9 @@
   --slide-size: 100%;
   --slide-height: 19rem;
   
+  
   padding: 1.6rem;
-  width: 300px;
+  
   
 }
 .embla__viewport {
@@ -67,9 +68,9 @@
   touch-action: pan-x;
   margin-top: calc(var(--slide-spacing) * -1);
   height: calc(3*calc(var(--slide-spacing) + var(--slide-height)));
-  width: var(--slide-width);
+  width: 31rem;
   flex-direction: column;
-  margin-left: 0px;  
+  margin-left: 0rem;  
   justify-content: left;
   justify-self: left;
   align-content: center;
@@ -81,15 +82,22 @@
 .embla__slide {
   flex: 0 var(--slide-size) 0;
   min-width: var(--slide-width);
-  width: 300px;
+  
+  width: 31rem;
+
   padding-top: var(--slide-spacing);
   position: relative;
+
   align-content: center;
   align-self: center;
   border-width:  3;
   border-color: springgreen;
   border-style :solid;
 
+}
+.card_body {
+  flex-direction: column;
+  flex-wrap: wrap
 }
 
 @keyframes App-logo-spin {
