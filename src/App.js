@@ -4,8 +4,6 @@ import { useState, useEffect } from 'react';
 //import ReactDOM from 'react-dom/client'
 import EmblaCarousel from './Carousel'
 //import useEmblaCarousel from 'embla-carousel-react'
-import logo from './logo.svg';
-import Card from 'react-bootstrap/Card';
 import data from './data.json';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -30,7 +28,7 @@ function App() {
     setCurrentJob(currentJobObj);
   };
   
-  
+  //<img src={require("./logos/logo.svg").default} className="App-logo" alt="logo" width={"50"} height={"auto"}/>
   
 
   return (
@@ -44,6 +42,7 @@ function App() {
           </p>
           
         </div>
+        
         
       </header>
       

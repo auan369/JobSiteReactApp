@@ -1,7 +1,9 @@
 import React from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 //import imageByIndex from './imageByIndex'
-import logo from './logo.svg';
+import logo from './logos/thales.jpg';
+import { FaLocationDot, FaStar } from "react-icons/fa6";
+
 /*
 <div className="embla__slide__number">
   <span>{index.company}</span>
@@ -22,21 +24,41 @@ const EmblaCarousel = (props) => {
             <button className="embla__slide" key={index} onClick={()=>updateCurrentJob(index)}>
               
               <div class="card flex-row flex-wrap" style={{display:"flex"}}>
-                <div class="card-header border-0" style={{flex:0.2}}>
-                  <img src={logo} className="App-logo" alt="logo" size=''/>
+                <div class="card-header border-0">
+                  <img src={require("./logos/"+index.logo)} className="App-logo" alt="logo" width={"50"} height={"auto"}/>
                 </div>
-                <div class="card-block px-1 flex-column" style={{flex:0.5}}>
-                    <p class="card-title" style={{fontSize:20, textAlign: 'left'}}>{index.company}</p>
-                    <p style={{fontSize:10, textAlign: 'left'}} class="card-text">{index.role}</p>
+                <div class="card-block px-1 flex-column" style={{flex:7}}>
+                    <div class="card-title" style={{fontSize:10, textAlign: 'left',  margin:0}}>
+                      <p style={{display:"inline-block", margin:0}}>{index.company}</p>
+                      <div class="px-3" style={{display:"inline-block",justifyContent: "center", margin:0}}>
+                        <span class="px-1">{index.stars}</span>
+                        <FaStar size={"0.8em"} style={{verticalAlign: 'baseline'}}/>
+                      </div>
+                    </div>
+                    <p style={{fontSize:15, textAlign: 'left',  margin:0}} class="card-text">{index.role}</p>
+
+                    <div style={{fontSize:10, textAlign: 'left', margin:0}}>
+                      <p style={{display:"inline-block", margin:0}}>{index.time}</p>
+                      <p class="px-2" style={{display:"inline-block",margin:0}}>
+                        <FaLocationDot size={"0.9em"} style={{verticalAlign:"baseline"}}/>
+                        {index.location}
+                      </p>
+                    </div>
+
+                    <p style={{fontSize:10, textAlign: 'left'}} class="card-text">
+                      {index.salary}
+                      <span class="badge bg-secondary" style={{marginLeft:5, justifySelf:'right'}}>{index.salaryTag}</span>
+                    </p>
+                    
                     
                 </div>
-                <div class="card-block px-1" style={{flex:1, alignSelf:'start', justifySelf:"self-end"}}>
+                <div class="card-block px-1" style={{flex:2, alignSelf:'start', justifySelf:"self-end"}}>
                   <h5 style={{textAlign:'right'}}><span class="badge bg-success" style={{marginRight:1, justifySelf:'right'}}>{index.mainTag}</span></h5>
                   
                 </div>
                 <div class="w-100"></div>
                 <div class="card-footer w-100 text-muted">
-                  <h5 style={{justifyContent:"left"}}>{index.tag.map((index) => (<span class="badge bg-secondary" style={{marginRight:1}}>{index}</span>))}</h5>
+                  <h5 style={{justifyContent:"left", textAlign:'left'}}>{index.tag.map((index) => (<span class="badge bg-secondary" style={{marginRight:1}}>{index}</span>))}</h5>
                 </div>
               </div>
 
