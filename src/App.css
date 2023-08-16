@@ -55,7 +55,7 @@
   --slide-height: 19rem;
   
   
-  padding: 1.6rem;
+  padding: 1rem;
   
   
 }
@@ -69,7 +69,7 @@
   touch-action: pan-x;
   margin-top: calc(var(--slide-spacing) * -1);
   height: calc(3*calc(var(--slide-spacing) + var(--slide-height)));
-  width: 22rem;
+
   flex-direction: column;
   margin-left: 0rem;  
   justify-content: left;
@@ -85,7 +85,7 @@
   flex: 0 var(--slide-size) 0;
   min-width: var(--slide-width);
   
-  width: 22rem;
+
 
   padding-top: var(--slide-spacing);
   position: relative;
@@ -107,6 +107,7 @@
 
 .card {
   transition: box-shadow .3s;
+  width: 22rem;
   
   background: #fff;
   float: left;
@@ -124,4 +125,9 @@
 .card:focus{
   border-style: solid;
   border-color: green;
+}
+
+.badge-green{
+  background-color: #1fc76a;
+  color: #1fc76a;
 }

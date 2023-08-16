@@ -33,8 +33,8 @@ function App() {
 
   return (
     
-    <div className="App">
-      <header className="App-header">
+    <div class="App">
+      <header class="App-header">
         
         <div class="row">
           <p class="col-12" >
@@ -46,17 +46,17 @@ function App() {
         
       </header>
       
-      <body className="App-body" style={{backgroundColor:"#e1e1e1"}}>
+      <body class="App-body">
         
         <div class="container">
           <div class="row">
-            <div class="col-sm">
+            <div class="col-sm-12 col-md-7">
               <EmblaCarousel slides={SLIDES} options={OPTIONS} updateCurrentJob={updateCurrentJob}/>
             </div>
-            <div class="col-sm">
+            <div class="col-md-5 d-none d-md-block">
               
-              <p class="row">{currentJob.role}</p>
-              <p class="row">{currentJob.company}</p>
+              <p class="row" style={{padding:20}}>{currentJob.role}</p>
+              
               
             </div>
           </div>

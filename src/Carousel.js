@@ -17,15 +17,15 @@ const EmblaCarousel = (props) => {
   
 
   return (
-    <div className="embla" >
-      <div className="embla__viewport" ref={emblaRef}>
-        <div className="embla__container">
+    <div class="embla" >
+      <div class="embla__viewport" ref={emblaRef}>
+        <div class="embla__container">
           {slides.map((index) => (
-            <button className="embla__slide" key={index} onClick={()=>updateCurrentJob(index)}>
+            <button class="embla__slide" key={index} onClick={()=>updateCurrentJob(index)}>
               
               <div class="card flex-row flex-wrap" style={{display:"flex"}}>
-                <div class="card-header border-0">
-                  <img src={require("./logos/"+index.logo)} className="App-logo" alt="logo" width={"50"} height={"auto"}/>
+                <div class="card-header border-0" style={{flex:1}}>
+                  <img src={require("./logos/"+index.logo)} class="App-logo" alt="logo" width={"20"} height={"auto"}/>
                 </div>
                 <div class="card-block px-1 flex-column" style={{flex:7, marginTop:10, marginBottom:10}}>
                     <div class="card-title" style={{fontSize:10, textAlign: 'left',  margin:0}}>
@@ -38,7 +38,7 @@ const EmblaCarousel = (props) => {
                     <p style={{fontSize:15, textAlign: 'left',  margin:0}} class="card-text">{index.role}</p>
 
                     <div style={{fontSize:10, textAlign: 'left', margin:0}}>
-                      <p style={{display:"inline-block", margin:0}}>{index.time}</p>
+                      <p style={{display:"inline-block", margin:0, fontWeight:"bold", color:"#1fc76a"}}>{index.time}</p>
                       <p class="px-2" style={{display:"inline-block",margin:0}}>
                         <FaLocationDot size={"0.9em"} style={{verticalAlign:"baseline"}}/>
                         {index.location}
@@ -52,8 +52,8 @@ const EmblaCarousel = (props) => {
                     
                     
                 </div>
-                <div class="card-block px-1" style={{flex:2, alignSelf:'start', justifySelf:"self-end", marginTop:10, marginBottom:10}}>
-                  <h5 style={{textAlign:'right', fontSize:"1rem"}}><span class="badge bg-success" style={{marginRight:1, justifySelf:'right', fontWeight:"normal"}}>{index.mainTag}</span></h5>
+                <div class="card-block px-1" style={{flex:1, alignSelf:'start', justifySelf:"self-end", marginTop:10, marginBottom:10}}>
+                  <h5 style={{textAlign:'right', fontSize:"1rem"}}><span class="badge badge-green" style={{marginRight:1, justifySelf:'right', fontWeight:"normal"}}>{index.mainTag}</span></h5>
                   
                 </div>
                 <div class="w-100"></div>
