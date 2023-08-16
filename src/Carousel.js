@@ -1,7 +1,7 @@
 import React from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 //import imageByIndex from './imageByIndex'
-import logo from './logos/thales.jpg';
+//import logo from './logos/thales.jpg';
 import { FaLocationDot, FaStar } from "react-icons/fa6";
 
 /*
