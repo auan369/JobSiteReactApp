@@ -58,7 +58,7 @@ const EmblaCarousel = (props) => {
                 </div>
                 <div class="w-100"></div>
                 <div class="card-footer w-100 text-muted overflow-hidden">
-                  <h5 style={{justifyContent:"left", textAlign:'left', fontSize:"1rem", display:'flex',flexWrap:"nowrap", textOverflow:"ellipsis"}}>{index.tag.map((index) => (<span class="badge bg-secondary" style={{marginRight:1,fontWeight:"normal", fontFamily:"monospace"}}>{index}</span>))}</h5>
+                  <h5 style={{justifyContent:"left", textAlign:'left', fontSize:"1rem", display:'flex',flexWrap:"nowrap", overflow:"clip"}}>{index.tag.map((index) => (<span class="badge bg-secondary" style={{marginRight:1,fontWeight:"normal", fontFamily:"monospace"}}>{index}</span>))}</h5>
                 </div>
               </div>
 

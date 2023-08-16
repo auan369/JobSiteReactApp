@@ -14,7 +14,7 @@
     "logo":"coupang.jpg"},
 
     {"id":3,"company":"Embed","role":"Senior Software Engineer (.Net)","time":"about 1 hour ago","location":"Singapore",
-    "tag":["Rest API","Docker","API","TDD","JavaScript","SQL"],
+    "tag":["Rest API","Docker","API","TDD","JavaScript"],
     "mainTag":"Fullstack",
     "stars":3.5,
     "logo":"embed.jpg"},

@@ -28,7 +28,7 @@
 }
 
 .App-body {
-  background-color: #748dc0;
+  background-color: #e1e1e1;
   min-height: 95vh;
   display: flex;
   flex-direction: column;
@@ -105,3 +105,23 @@
 
 
 
+.card {
+  transition: box-shadow .3s;
+  
+  background: #fff;
+  float: left;
+  
+}
+.card:hover {
+  box-shadow: 1px 2px 9px #808080; 
+}
+
+.card:active{
+  border-style: solid;
+  border-color: green;
+}
+
+.card:focus{
+  border-style: solid;
+  border-color: green;
+}
