@@ -27,7 +27,7 @@ const EmblaCarousel = (props) => {
                 <div class="card-header border-0">
                   <img src={require("./logos/"+index.logo)} className="App-logo" alt="logo" width={"50"} height={"auto"}/>
                 </div>
-                <div class="card-block px-1 flex-column" style={{flex:7}}>
+                <div class="card-block px-1 flex-column" style={{flex:7, marginTop:10, marginBottom:10}}>
                     <div class="card-title" style={{fontSize:10, textAlign: 'left',  margin:0}}>
                       <p style={{display:"inline-block", margin:0}}>{index.company}</p>
                       <div class="px-3" style={{display:"inline-block",justifyContent: "center", margin:0}}>
@@ -52,13 +52,13 @@ const EmblaCarousel = (props) => {
                     
                     
                 </div>
-                <div class="card-block px-1" style={{flex:2, alignSelf:'start', justifySelf:"self-end"}}>
-                  <h5 style={{textAlign:'right'}}><span class="badge bg-success" style={{marginRight:1, justifySelf:'right'}}>{index.mainTag}</span></h5>
+                <div class="card-block px-1" style={{flex:2, alignSelf:'start', justifySelf:"self-end", marginTop:10, marginBottom:10}}>
+                  <h5 style={{textAlign:'right', fontSize:"1rem"}}><span class="badge bg-success" style={{marginRight:1, justifySelf:'right', fontWeight:"normal"}}>{index.mainTag}</span></h5>
                   
                 </div>
                 <div class="w-100"></div>
-                <div class="card-footer w-100 text-muted">
-                  <h5 style={{justifyContent:"left", textAlign:'left'}}>{index.tag.map((index) => (<span class="badge bg-secondary" style={{marginRight:1}}>{index}</span>))}</h5>
+                <div class="card-footer w-100 text-muted overflow-hidden">
+                  <h5 style={{justifyContent:"left", textAlign:'left', fontSize:"1rem", display:'flex',flexWrap:"nowrap", textOverflow:"ellipsis"}}>{index.tag.map((index) => (<span class="badge bg-secondary" style={{marginRight:1,fontWeight:"normal", fontFamily:"monospace"}}>{index}</span>))}</h5>
                 </div>
               </div>
 

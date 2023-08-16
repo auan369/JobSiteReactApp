@@ -3,7 +3,8 @@
 }
 
 .App-logo {
-  height: 4rem;
+  width: 2rem;
+  height: auto;
   pointer-events: none;
 
 }
@@ -68,13 +69,14 @@
   touch-action: pan-x;
   margin-top: calc(var(--slide-spacing) * -1);
   height: calc(3*calc(var(--slide-spacing) + var(--slide-height)));
-  width: 31rem;
+  width: 22rem;
   flex-direction: column;
   margin-left: 0rem;  
   justify-content: left;
   justify-self: left;
   align-content: center;
   align-self: center;
+  
   
 
 
@@ -83,16 +85,17 @@
   flex: 0 var(--slide-size) 0;
   min-width: var(--slide-width);
   
-  width: 31rem;
+  width: 22rem;
 
   padding-top: var(--slide-spacing);
   position: relative;
 
   align-content: center;
   align-self: center;
-  border-width:  3;
-  border-color: springgreen;
-  border-style :solid;
+ 
+  border-style: none;
+  background-color: unset;
+  
 
 }
 .card_body {
