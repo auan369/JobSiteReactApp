@@ -46,7 +46,7 @@ function App() {
         
       </header>
       
-      <body className="App-body">
+      <body className="App-body" style={{backgroundColor:"#e1e1e1"}}>
         
         <div class="container">
           <div class="row">
