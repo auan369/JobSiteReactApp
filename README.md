@@ -5,4 +5,4 @@ This project can viewed at [https://job-site-react-app-git-main-auan369.vercel.a
 
 
 ## Video of React App
-![Video](https://github.com/auan369/JobSiteReactApp/blob/master/screenshots/jobSiteReactApp.gif)
+![Video](https://github.com/auan369/JobSiteReactApp/blob/main/screenshots/jobSiteReactApp.gif)
